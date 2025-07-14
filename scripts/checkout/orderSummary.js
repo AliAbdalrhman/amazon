@@ -8,10 +8,6 @@ import {
 } from "../../data/deliveryOptions.js";
 import { renderPaymentSummary } from "./paymentSummary.js";
 
-const today = dayjs();
-const deliveryDate = today.add(7, "days");
-deliveryDate.format("dddd, MMMM D");
-
 export function renderOrderSummary() {
   let cartSummaryHTML = "";
 
